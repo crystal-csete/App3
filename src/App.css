@@ -11,6 +11,7 @@
   width: 100vw;
 
   background-color: azure;
+  color: #393b3f;
 }
 
 .App-banner {
@@ -54,9 +55,13 @@
 
 .Landing-text {
   font-size: 1.3rem;
+  text-align: left;
 
-  margin: 4% 16%;
+  margin: 4% 24%;
   padding: 2rem 4rem;
+
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 
   display: flex;
   flex-direction: column;
@@ -64,11 +69,35 @@
   align-items: center;
 }
 
+.DestOneImg {
+  height: 30rem;
+  width: 100%;
+  margin: 1rem 1rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.DestTwoImg {
+  height: 30rem;
+  width: 100%;
+  margin: 1rem 1rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.DestThreeImg {
+  height: 30rem;
+  width: 100%;
+  margin: 1rem 1rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
 /* Advert Page */
 
 .AdvertDiv {
   margin: 1rem;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem 1rem 6rem 1rem;
 }
 
 .AdvertDiv > figcaption {

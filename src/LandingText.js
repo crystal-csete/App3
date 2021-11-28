@@ -1,11 +1,14 @@
 /** @format */
 
 import React from "react";
+import DestinationOne from "./DestinationOne";
+import DestinationTwo from "./DestinationTwo";
+import DestinationThree from "./DestinationThree";
 
 const LandingText = () => {
   return (
     <div className='Landing-text'>
-      <h3>Where does it come from?</h3>
+      <h3>Beach Getaway</h3>
       <p>
         Contrary to popular belief, Lorem Ipsum is not simply random text. It
         has roots in a piece of classical Latin literature from 45 BC, making it
@@ -20,7 +23,8 @@ const LandingText = () => {
         Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
         1.10.32.
       </p>
-      <h3>Where can I get some?</h3>
+      <DestinationOne />
+      <h3>Shopping in Barcelona</h3>
       <p>
         There are many variations of passages of Lorem Ipsum available, but the
         majority have suffered alteration in some form, by injected humour, or
@@ -34,6 +38,20 @@ const LandingText = () => {
         generated Lorem Ipsum is therefore always free from repetition, injected
         humour, or non-characteristic words etc.
       </p>
+      <DestinationTwo />
+      <h3>Grab some peace of mind in the Forest</h3>
+      <p>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. The point of
+        using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable English. Many desktop publishing packages and web
+        page editors now use Lorem Ipsum as their default model text, and a
+        search for 'lorem ipsum' will uncover many web sites still in their
+        infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </p>
+      <DestinationThree />
     </div>
   );
 };
