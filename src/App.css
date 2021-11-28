@@ -1,38 +1,116 @@
+/** @format */
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+
+  background-color: azure;
 }
 
-.App-logo {
+.App-banner {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 40vh;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  background-image: url("./images/pinkbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+}
+
+.App-header:hover {
+  background-image: url("./images/pinkbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* LandingText Page */
+
+.Landing-text {
+  font-size: 1.3rem;
+
+  margin: 4% 16%;
+  padding: 2rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Advert Page */
+
+.AdvertDiv {
+  margin: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.AdvertDiv > figcaption {
+  text-align: center;
+  font-weight: 700;
+
+  padding: 1rem 0 1rem 0;
+  border-bottom: 2px solid black;
+}
+
+.AdvertImg {
+  height: 20rem;
+  width: 20rem;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.AdvertImg > img {
+  border-radius: 6px;
+}
+
+/* Footer Page */
+
+.footer {
+  background-image: url("./images/footerbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+
+  min-height: 20vh;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.footer p {
+  color: #61dafb;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem;
 }
